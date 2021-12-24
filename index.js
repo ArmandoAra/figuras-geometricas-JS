@@ -1,3 +1,9 @@
+// Variables
+var parrafoCuadrado = document.querySelector(".cuadradoResultado");
+var parraTriangulo = document.querySelector(".trianguloResultado");
+var parrafoCirculo = document.querySelector(".circuloResultado");
+
+
 // Codigo del cuadrado
 function perimetroCuadrado(lado){
    return lado * 4; 
@@ -58,7 +64,7 @@ function calcularPerimetroCuadrado(){
     const value = input.value;
 
     const perimetro = perimetroCuadrado(value);
-    alert(perimetro);
+    parrafoCuadrado.innerHTML = "Resultado " + perimetro + "cm";
 }
 
 function calcularAreaCuadrado(){
@@ -66,7 +72,7 @@ function calcularAreaCuadrado(){
     const value = input.value;
 
     const area = areaCuadrado(value);
-    alert(area);
+    parrafoCuadrado.innerHTML = "Resultado " + area + "cm";;
 }
 
 // Funciones para los botones del Triangulo

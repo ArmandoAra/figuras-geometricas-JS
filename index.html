@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Figuras geometricas Curso de Platzi</title>
 </head>
 <body>
-    <header>
+    <header class="Encabezado">
         <h1>
             Figuras Geometricas
         </h1>
@@ -20,6 +21,10 @@
                 Escribe cuanto mide cada lado de tu cuadrodo:
             </label>
             <input id="InputCuadrado" type="number"/>
+            <div class="contenedorCuadrado">
+                <div class="figuraCuadrado"></div>
+            </div>
+            <p class="cuadradoResultado">Resultado:</p>
             <button type="button" onclick="calcularPerimetroCuadrado()">
                 Calcular perimetro
             </button>
