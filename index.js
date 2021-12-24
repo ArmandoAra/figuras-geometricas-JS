@@ -1,6 +1,6 @@
 // Variables
 var parrafoCuadrado = document.querySelector(".cuadradoResultado");
-var parraTriangulo = document.querySelector(".trianguloResultado");
+var parrafoTriangulo = document.querySelector(".trianguloResultado");
 var parrafoCirculo = document.querySelector(".circuloResultado");
 
 
@@ -72,7 +72,7 @@ function calcularAreaCuadrado(){
     const value = input.value;
 
     const area = areaCuadrado(value);
-    parrafoCuadrado.innerHTML = "Resultado " + area + "cm";;
+    parrafoCuadrado.innerHTML = "Resultado " + Math.round(area) + "cm²";
 }
 
 // Funciones para los botones del Triangulo
@@ -87,7 +87,7 @@ function calcularPerimetroTriangulo(){
     base = parseFloat(base.value);
 
     const perimetro = perimetroTriangulo(input1, input2, base);
-    alert(perimetro);
+    parrafoTriangulo.innerHTML = "Resultado " + perimetro + "cm";
 }
 
 function calcularAreaTriangulo(){
@@ -102,7 +102,7 @@ function calcularAreaTriangulo(){
     const altura = alturaTrianguloIsosceles(input1,input2,base);
     const area = areaTriangulo(base, altura);
 
-    alert(area);
+    parrafoTriangulo.innerHTML = "Resultado " + Math.round(area) + "cm²";
 
 }
 
@@ -114,7 +114,7 @@ function calcularAreaCirculo(){
     radio = parseFloat(radio.value);
 
     const area = areaCirculo(radio);
-    alert(area);
+    parrafoCirculo.innerHTML = "Resultado " + Math.round(area) + "cm²";
 }
 
 function calcularPerimetroCirculo(){
@@ -122,6 +122,6 @@ function calcularPerimetroCirculo(){
     radio = parseFloat(radio.value);
 
     const perimetro = perimetroCirculo(radio);
-    alert(perimetro);
+    parrafoCirculo.innerHTML = "Resultado " + perimetro + "cm";
 
 }
