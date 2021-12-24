@@ -99,3 +99,23 @@ function calcularAreaTriangulo(){
     alert(area);
 
 }
+
+// Funciones para los botones del Circulo
+
+function calcularAreaCirculo(){
+    let radio = document.getElementById('Radio');
+    
+    radio = parseFloat(radio.value);
+
+    const area = areaCirculo(radio);
+    alert(area);
+}
+
+function calcularPerimetroCirculo(){
+    let radio = document.getElementById("Radio");
+    radio = parseFloat(radio.value);
+
+    const perimetro = perimetroCirculo(radio);
+    alert(perimetro);
+
+}
