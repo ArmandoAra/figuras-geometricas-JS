@@ -13,7 +13,7 @@
         </h1>
         <p>Primer taller practico de javascript en Platzi</p>
     </header>
-    <section>
+    <section class="Cuadrado">
         <h2>Calcula el area y el perimetro de un Cuadrado</h2>
         <form for="InputCuadrado">
             <label>
@@ -26,6 +26,20 @@
             <button type="button" onclick="calcularAreaCuadrado()">
                 Calcular Area
             </button>
+        </form>
+    </section>
+    <section class="Triangulo">
+        <h2>Calcula el area y el perimetro de un Triangulo</h2>
+        <form for="LadoTriangulo1 LadoTriangulo2 BaseTriangulo">
+            <label>
+                Escribe cuanto mide cada lado del Triangulo: 
+            </label>
+            <input id="LadoTriangulo1" type="number"/><label> cm</label>        
+            <input id="LadoTriangulo2" type="number"/><label> cm</label>
+            <input id="BaseTriangulo" type="number"/><label> cm</label>
+
+            <button type="button" onclick="calcularPerimetroTriangulo()">Calcular Perimetro del Triangula</button>
+            <button type="button" onclick="calcularAreaTriangulo()">Calcular Area de Triangulo Isosceles</button>
         </form>
     </section>
 
